@@ -1,0 +1,9 @@
+#boton-numero{
+    background-color: blue;
+    color:blanchedalmond;
+}
+#boton-apellido{
+    background-color: brown;
+    color:black;
+    border-radius: 10px;
+}
