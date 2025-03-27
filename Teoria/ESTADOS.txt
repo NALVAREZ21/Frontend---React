@@ -1,0 +1,99 @@
+En JavaScript puro, la mutabilidad es común y aceptable, ya que es simple y directa.
+Pero en React, la mutabilidad directa del estado está mal vista porque puede llevar a comportamientos inesperados, 
+inconsistencias y problemas de rendimiento especialmente en aplicaciones grandes o complejas.. 
+En su lugar react,creara copias de objetos o arrays que quiera actualizar cuando necesites actualizar el estado y 
+esto garantiza que React pueda rastrear los cambios y re-renderizar los componentes de manera eficiente.
+
+Usando useState o funciones similares para actualizar el estado
+
+				¿QUE ES EL ESTADO EN REACT?
+
+El estado en React es un concepto fundamental que permite a los componentes de React sea dinámico e interactivo. 
+permitira manejar datos que pueden cambiar con el tiempo. 
+
+El estado es crucial porque:
+
+Permite interactividad: Sin estado, los componentes serían estáticos y no podrían responder a las acciones del usuario.
+Controla la UI: El estado determina qué se muestra en la pantalla y cómo se comporta la aplicación.
+
+				Tipos de estado en React
+Estado local: Es el estado que pertenece a un solo componente. Se maneja dentro del componente usando el hook useState o, en componentes de clase, con this.state.
+Estado global: Es el estado que se comparte entre múltiples componentes.Para trabajarlo, se usan herramientas como Context API,bibliotecas como Redux o Zustand.
+	
+				¿Cómo se usa el estado?
+
+En React, el estado se puede manejar de dos maneras:
+
+En componentes funcionales: Usando el hook useState.
+
+
+Estado en componentes funcionales (con useState)
+Los componentes funcionales usan el hook useState para manejar el estado. Este hook devuelve un array con dos posiciones,
+la primera posicion es el valor de inicio y la 2da posicion es una funcion que sirve para modificar el valor de inicio
+
+El valor actual del estado.
+
+Una función para actualizar el estado.
+
+* No modifiques el estado directamente:
+
+En componentes funcionales, usa la función proporcionada por useState.
+
+
+Ejemplo incorrecto: this.state.count = 5; (esto no funciona correctamente).
+ 					
+				¿QUE ES UN HOOCKS?
+
+Hoocks (ganchos) = Los hooks son funciones especiales que te permiten "enganchar" características de React,
+como el estado y el ciclo de vida, en componentes funcionales. Antes de los hooks, estas características solo estaban disponibles en componentes de clase.
+Los hoocks no andan en componentes clases
+
+				¿Qué resuelven los hooks?
+
+Permiten usar estado y otras características de React sin necesidad de escribir componentes de clase.
+Hacen el código más simple y reusable.
+
+Hooks más comunes:
+useState: Este hoock me permite añadirle estado a un componente funcional.
+(Es un hoock que devuelve un array de dos posiciones, la primera posicion es un valor de inicio y la 2 posicion es una funcion que nos permitira para cambiar el valor de la primera posicion)
+
+Es una funcion que me devuelve un array de dos posiciones, La primera posicion
+
+useEffect: Para manejar efectos secundarios (como llamadas a APIs).
+useContext: Para acceder al contexto de React.
+
+                                     ¿QUE SON LOSEVENTOS?
+Los eventos en React son acciones que ocurren en la interfaz de usuario, como hacer clic en un botón, 
+escribir en un input, o enviar un formulario. React maneja los eventos de manera similar al DOM, pero con algunas diferencias clave:
+Sintaxis:
+
+* Los eventos se nombran en camelCase (por ejemplo, onClick, onChange).
+
+									CICLO DE VIDA DE UN COMPONENTE
+
+El ciclo de vida de un componente en React se refiere a las diferentes etapas por las que pasa un componente, desde su creación hasta su eliminación del DOM.
+
+*Fases del Ciclo de Vida en React
+
+El ciclo de vida de un componente se divide en tres fases principales:
+
+Montaje (Mounting)
+
+Cuando el componente se crea y se inserta en el DOM. Renderiza el componente por primera vez
+
+Actualización (Updating)
+
+Cuando el componente se actualiza debido a cambios en props o state. El componente debe rerenderizarse ()
+
+Desmontaje (Unmounting)
+
+Cuando el componente se elimina del DOM.
+
+
+													
+
+
+
+
+
+
